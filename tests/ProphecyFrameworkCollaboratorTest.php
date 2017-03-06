@@ -27,8 +27,8 @@ class ProphecyFrameworkCollaboratorTest extends TestCase
     {
         $collaborator = $this->prophesize(Collaborator::class);
 
-        $collaborator->executeImportantAction('"this string must be json quoted"')->willReturn('thanks for message')
-            ->shouldBeCalled()
+        $collaborator->executeImportantAction('"this string must be json quoted"')
+            ->willReturn('thanks for message')
         ;
 
         $consumer = new Consumer($collaborator->reveal());

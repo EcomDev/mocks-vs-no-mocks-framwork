@@ -27,7 +27,7 @@ class MockObjectFrameworkCollaboratorTest extends TestCase
     {
         $collaborator = $this->createMock(Collaborator::class);
 
-        $collaborator->expects($this->once())
+        $collaborator->expects($this->any())
             ->method('executeImportantAction')
             ->with('"this string must be json quoted"')
             ->willReturn('thanks for message')
