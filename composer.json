@@ -1,0 +1,29 @@
+{
+    "name": "ecomdev/mocks-vs-no-mocks",
+    "description": "PHPUnit Mocks vs No Mocks",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Chepurnyi",
+            "email": "ivan.chepurnyi@ecomdev.org"
+        }
+    ],
+    "require": {},
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-4": {
+            "EcomDev\\MocksVsNoMocks\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EcomDev\\MocksVsNoMocks\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    }
+}
